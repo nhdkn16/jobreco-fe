@@ -1,19 +1,48 @@
 export default function Footer() {
     return (
         <footer className="border-t border-slate-200 bg-white">
-            <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-10 md:flex-row md:items-center md:justify-between">
+            <div className="mx-auto max-w-7xl px-6 py-14">
                 
-                <div>
-                    <h2 className="text-lg font-bold text-slate-900">
-                        JobReco
-                    </h2>
+                <div className="grid gap-10 md:grid-cols-4">
+                
+                    <div className="md:col-span-2">
+                        
+                        <h2 className="text-2xl font-black text-slate-900">
+                            JobReco
+                        </h2>
 
-                    <p className="mt-2 text-sm text-slate-500">
-                        AI-powered job recommendation platform.
-                    </p>
+                        <p className="mt-4 max-w-md leading-7 text-slate-600">
+                            Nền tảng AI giúp phân tích CV và gợi ý công việc
+                            phù hợp dành cho sinh viên và người đi làm.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 className="font-bold text-slate-900">
+                            Sản phẩm
+                        </h3>
+
+                        <div className="mt-4 space-y-3 text-slate-600">
+                            <p>AI Matching</p>
+                            <p>Skill Gap</p>
+                            <p>Dashboard</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 className="font-bold text-slate-900">
+                            Liên hệ
+                        </h3>
+
+                        <div className="mt-4 space-y-3 text-slate-600">
+                            <p>Email</p>
+                            <p>Facebook</p>
+                            <p>LinkedIn</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div className="text-sm text-slate-500">
+                <div className="mt-14 border-t border-slate-200 pt-8 text-sm text-slate-500">
                     © 2026 JobReco. All rights reserved.
                 </div>
             </div>
