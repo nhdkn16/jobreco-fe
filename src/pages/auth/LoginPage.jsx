@@ -113,7 +113,7 @@ export default function LoginPage() {
                     )}
                 </div>
 
-                <button className="w-full rounded-2xl bg-gradient-to-r from-indigo-600 to-cyan-500 py-4 text-lg font-bold text-white shadow-xl shadow-indigo-500/20 transition hover:scale-[1.02]">
+                <button className="w-full rounded-2xl border-2 border-indigo-600 bg-white py-4 text-lg font-black text-black shadow-md transition hover:scale-[1.02] hover:bg-slate-50">
                     Đăng nhập
                 </button>
             </form>

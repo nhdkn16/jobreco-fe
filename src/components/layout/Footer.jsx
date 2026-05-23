@@ -7,7 +7,7 @@ export default function Footer() {
                 
                     <div className="md:col-span-2">
                         
-                        <h2 className="text-2xl font-black text-slate-900">
+                        <h2 className="text-3xl font-black text-slate-900">
                             JobReco
                         </h2>
 
@@ -42,7 +42,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="mt-14 border-t border-slate-200 pt-8 text-sm text-slate-500">
+                <div className="flex items-center justify-center mt-14 border-t border-slate-200 pt-8 text-sm text-slate-500">
                     © 2026 JobReco. All rights reserved.
                 </div>
             </div>
