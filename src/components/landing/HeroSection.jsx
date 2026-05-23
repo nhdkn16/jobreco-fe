@@ -19,15 +19,15 @@ export default function HeroSection() {
                 >
                     <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-4 py-2 text-sm font-medium text-indigo-700">
                         <Sparkles size={16} />
-                        AI Recommendation Platform
+                        Nền Tảng Đề Xuất Công Việc
                     </div>
 
                     <h1 className="text-5xl font-black leading-tight tracking-tight text-slate-900 md:text-7xl">
                         Tìm Công Việc
-                        <span className="bg-gradient-to-r from-indigo-600 to-cyan-500 bg-clip-text text-transparent">
+                        <span className="font-bold text-indigo-700">
                             {' '}Phù Hợp{' '}
                         </span>
-                        Với AI
+                        Với CV
                     </h1>
 
                     <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-600">
@@ -38,7 +38,7 @@ export default function HeroSection() {
 
                     <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                         
-                        <button className="flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-indigo-600 to-cyan-500 px-8 py-4 text-lg font-semibold text-white shadow-xl shadow-indigo-500/20 transition hover:scale-105">
+                        <button className="flex items-center justify-center gap-2 rounded-2xl border-2 border-indigo-600 bg-white px-8 py-4 text-lg font-black text-black shadow-md transition hover:scale-105 hover:bg-slate-50">
                             <Upload size={20} />
                             Upload CV
                         </button>

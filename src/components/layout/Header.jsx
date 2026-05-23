@@ -25,38 +25,30 @@ export default function Header() {
                 {/* LOGO */}
                 <Link
                     to="/"
-                    className="flex items-center gap-2"
+                    className="flex items-center gap-3"
                 >
-                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-r from-indigo-600 to-cyan-500 text-white">
-                        <BriefcaseBusiness size={20} />
-                    </div>
-
-                    <div>
-                        <h1 className="text-lg font-bold tracking-tight text-slate-900">
-                            JobReco
-                        </h1>
-
-                        <p className="text-xs text-slate-500">
-                            AI Job Recommendation
-                        </p>
-                    </div>
+                    <img
+                        src="./src/assets/logo.png"
+                        alt="JobReco Logo"
+                        className="h-12 w-25 rounded-xl object-cover"
+                    />
                 </Link>
 
                 {/* MENU */}
                 <nav className="hidden items-center gap-8 md:flex">
-                
+  
                     <Link
                         to="/"
                         className="text-sm font-medium text-slate-600 transition hover:text-indigo-600"
                     >
-                        Trang chủ
+                        Trang Chủ
                     </Link>
 
                     <Link
-                        to="/about"
+                        to="/dashboard/upload-cv"
                         className="text-sm font-medium text-slate-600 transition hover:text-indigo-600"
                     >
-                        Giới thiệu
+                        Đề Xuất
                     </Link>
                 </nav>
 
@@ -65,19 +57,19 @@ export default function Header() {
 
                     {user ? (
                         <>
-                        <button
-                            onClick={() => navigate('/dashboard')}
-                            className="rounded-xl border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-100"
-                        >
-                            Dashboard
-                        </button>
+                            <button
+                                onClick={() => navigate('/dashboard')}
+                                className="rounded-xl border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-100"
+                            >
+                                Dashboard
+                            </button>
 
-                        <button
-                            onClick={handleLogout}
-                            className="rounded-xl bg-gradient-to-r from-indigo-600 to-cyan-500 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-indigo-500/20 transition hover:scale-105"
-                        >
-                            Đăng xuất
-                        </button>
+                            <button
+                                onClick={handleLogout}
+                                className="rounded-xl border-2 border-indigo-600 bg-white px-4 py-2 text-sm font-black text-black shadow-md transition hover:scale-105 hover:bg-slate-50"
+                            >
+                                Đăng xuất
+                            </button>
                         </>
                     ) : (
                         <>
@@ -92,7 +84,7 @@ export default function Header() {
                                 to="/register"
                                 className="rounded-xl bg-gradient-to-r from-indigo-600 to-cyan-500 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-indigo-500/20 transition hover:scale-105"
                             >
-                                Bắt đầu
+                                Bắt Đầu
                             </Link>
                         </>
                     )}
