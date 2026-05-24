@@ -28,7 +28,7 @@ export default function Header() {
                     className="flex items-center gap-3"
                 >
                     <img
-                        src="./src/assets/logo.png"
+                        src="./public/logo.png"
                         alt="JobReco Logo"
                         className="h-12 w-25 rounded-xl object-cover"
                     />
